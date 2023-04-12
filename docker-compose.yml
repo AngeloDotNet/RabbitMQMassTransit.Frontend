@@ -1,12 +1,12 @@
 version: '3.7'
 
 services:
-  NOME-SERVIZIO:
-    container_name: NOME-SERVIZIO
+  webapi-net6:
+    container_name: api-frontend
     restart: always
     build:
       context: .
-      dockerfile: src/Dockerfile
+      dockerfile: src/WebAPI.Frontend/Dockerfile
     ports:
       - 80:5001
     networks:
