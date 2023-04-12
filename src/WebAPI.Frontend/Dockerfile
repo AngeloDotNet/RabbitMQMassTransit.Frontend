@@ -15,4 +15,4 @@ ENV ASPNETCORE_ENVIRONMENT="production"
 COPY --from=build /webapp/compiled .
 
 EXPOSE 5001
-ENTRYPOINT ["dotnet", "NOME-ASSEMBLY.dll"]
+ENTRYPOINT ["dotnet", "WebAPI.Frontend.dll"]
